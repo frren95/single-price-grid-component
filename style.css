@@ -15,9 +15,9 @@ body {
     background-color: rgb(230,239,246);
     box-sizing: border-box;
     font-family: 'Karla', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 150%;
+    font-size: 1.3em;
+    line-height: 1.9;
+    color: hsl(218, 22%, 67%);
 }
 
 footer {
@@ -31,16 +31,17 @@ footer {
 .modal {
     position: absolute;
     width: 80vw;
+    max-height: 83vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: rgb(255,255,255);
-    border-radius: .5rem;
-    padding: 2em;
 }
 
-.modal-top {
-    padding: 1.2em 0;
+.modal-top,
+.subscription,
+.whyUs {
+    padding: 2em;
 }
 
 h5 {
@@ -57,10 +58,60 @@ h5 {
     font-weight: 700;
     color: hsl(71, 73%, 54%);
     padding-bottom: 1em;
+    line-height: 1.2;
 }
 
-.modal-top p {
-    font-size: 1.1em;
-    line-height: 1.9;
-    color: hsl(218, 22%, 67%);
+.subscription,
+.whyUs {
+    
+    color: rgb(255,255,255);
+}
+
+.subscription {
+    background-color: rgb(43, 179, 177);
+}
+
+.subscription p.price {
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.subscription p.price span {
+    font-size: .5em;
+    color:hsl(179, 54%, 59%);
+    vertical-align: 15%;
+    padding-left: .5em;
+}
+
+.subscription button {
+    background-color: hsl(71, 73%, 54%);
+    width: 100%;
+    margin-top: 1.5em;
+    height: 3em;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: rgb(255,255,255);
+    box-shadow: 0px 15px 2px -2px rgba(160, 160, 160, 0.5);
+}
+
+.whyUs {
+    background-color: rgb(74,190,189);
+}
+
+.whyUs h6 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.whyUs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.whyUs li {
+    color:hsl(204, 43%, 93%);
+    line-height: 1.5;
 }
