@@ -31,7 +31,6 @@ footer {
 .modal {
     position: absolute;
     width: 80vw;
-    max-height: 83vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -114,4 +113,20 @@ h5 {
 .whyUs li {
     color:hsl(204, 43%, 93%);
     line-height: 1.5;
+}
+
+@media screen and (min-width: 975px) {
+
+    .modal {
+        width: 50vw;
+    }
+
+    .modal-bottom {
+        display: flex;
+    }
+
+    .subscription,
+    .whyUs {
+        flex: 1 1 auto;
+    }
 }
